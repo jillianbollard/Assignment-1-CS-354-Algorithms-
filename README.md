@@ -1,2 +1,3 @@
-# Assignment-1-CS-354-Algorithms-
-Assignment #1 repository for Mark Liffiton's Algorithms at IWU
+Author: Jillian Bollard
+01/16/2026
+Assignment #1 for CS 354 with Mark Liffiton
