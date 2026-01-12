@@ -26,7 +26,7 @@ this assignment.
 
 - [ ] I did **not** receive any external assistance on this assignment. All
   work submitted is entirely my own.
-- [ ] I **did** receive external assistance on this assignment, as detailed in
+- [X] I **did** receive external assistance on this assignment, as detailed in
   the sections below.
 
 ---
@@ -39,7 +39,7 @@ detail each separate instance of assistance.
 
 ### A. AI / Large Language Model (LLM) Assistance
 
-*If you did not use AI, you can write "None" here.*
+*None*
 
 - **Instance 1:**
     - **AI Tool Used:** *e.g., ChatGPT, GitHub Copilot*
@@ -50,7 +50,7 @@ detail each separate instance of assistance.
 
 ### B. Collaboration with Peers
 
-*If you did not collaborate, you can write "None" here.*
+*None*
 
 - **Instance 1:**
     - **Name(s) of Collaborator(s):**
@@ -61,13 +61,12 @@ detail each separate instance of assistance.
 
 ### C. Code or Content from External Websites
 
-*If you did not use external websites, you can write "None" here.*
+*Utilized*
 
 - **Instance 1:**
-    - **URL of Source:**
-    - **How it was Used:** *e.g., Adapted a code snippet for sorting, used a
-      tutorial to understand a concept, quoted a sentence.*
-    - **Specific Part of Assignment Affected:**
+    - **URL of Source: https://www.w3schools.com/java/java_classes.asp**
+    - **How it was Used:** Used to help set up java classes still trying to refres my memory on the language. Used to look at . notation if using functions from a different class (my helper method class seperated from my main function class)
+    - **Specific Part of Assignment Affected:** Initial set up of classes and files in the FullSearchAlgs file and SearchAlgs file by imbedding FullSearchAlgs class within main function of SearchAlgs class
 
 ---
 
