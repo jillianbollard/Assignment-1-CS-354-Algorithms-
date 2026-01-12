@@ -1,6 +1,6 @@
 public class FullSearchAlgs {
     // linear search function
-    public static int linear_search(int input_num){
+    public static int linear_search(double[] file_numbers, int input_num){
         // initalize the default return val to not found
         int return_val = -1;
 
@@ -13,7 +13,7 @@ public class FullSearchAlgs {
 
 
     // random binary function
-    public static int binary_search(int input_num){
+    public static int binary_search(double[] file_numbers, int input_num){
         // initalize the default return val to not found
         int return_val = -1;
 
@@ -26,7 +26,7 @@ public class FullSearchAlgs {
 
 
     // random search function *add catch all if the function terminates after 10M searches returning the value -2*
-    public static int random_search(int input_num){
+    public static int random_search(double[] file_numbers, int input_num){
         // initalize the default return val to not found
         int return_val = -1;
 
