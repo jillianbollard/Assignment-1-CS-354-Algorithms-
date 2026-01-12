@@ -5,7 +5,7 @@ public class SearchAlgs{
     public static void main(int num, String method){
 
         // read the numbers in the given command line into a supporting data structure to be traversed
-        double[] file_numbers = StdIn.readAllDoubles();
+        int[] file_numbers = StdIn.readAllInts();
 
         // check for linear method input
         if(method == "linear"){
