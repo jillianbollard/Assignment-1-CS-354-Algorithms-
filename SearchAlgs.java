@@ -1,11 +1,11 @@
 /**
  * The SearchAlgs class for Assignment #1
  * @author Jillian Bollard
- * 11/16/2026
+ * 01/16/2026
  */
 
 public class SearchAlgs{
-    
+
     /**
     * The main function for SearchAlgs class (CS 354 Assignment #1)
     * Takes two inputs of a desired number to find within a given list of integers as well as the type of function wanting to be used as the search method

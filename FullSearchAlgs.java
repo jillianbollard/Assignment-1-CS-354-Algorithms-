@@ -1,7 +1,7 @@
 /**
  * The FullSearchAlgs class for Assignment #1
  * @author Jillian Bollard
- * 11/16/2026
+ * 01/16/2026
  */
 
 public class FullSearchAlgs {
@@ -96,7 +96,7 @@ public class FullSearchAlgs {
         // implement random search method
         while(counter < 10000000){
             // choose random index
-            int rand_index = (int)Math.random() * (file_numbers.length - 1);
+            int rand_index = (int)(Math.random() * (file_numbers.length));
 
             // if it matches position return that index
             if(file_numbers[rand_index] == input_num){
