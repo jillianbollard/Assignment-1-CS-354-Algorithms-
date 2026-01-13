@@ -1,5 +1,22 @@
+/**
+ * The FullSearchAlgs class for Assignment #1
+ * @author Jillian Bollard
+ * 11/16/2026
+ */
+
 public class FullSearchAlgs {
-    // linear search function
+
+    /**
+    * The linear search function for FullSearchAlgs class
+    * Takes two inputs and searches through the file_numbers for a desired number by searching all file_number items linearly
+    * If the function detects a match, it will return the index of the match in the file_numbers list
+    * If no match is detected, the function will return -1 after searching all indexes in file_numbers
+    *
+    * @param file_numbers
+    * @param input_num
+    * @return index of where the value was found in the list, otherwise -1
+    */
+
     public static int linear_search(int[] file_numbers, int input_num){
 
         // implement linear search method
@@ -17,7 +34,18 @@ public class FullSearchAlgs {
     }
 
 
-    // binary search function
+    /**
+    * The binary search function for FullSearchAlgs class
+    * Takes two inputs and searches through the file_numbers for a desired number by searching all file_number items with binary search
+    * The function will take the middle index of the sorted list and check if the input_num is larger, smaller, or a match
+    * Once detecting if the input_num is higher or lower, the bound of the list will be adapted to the corresponding right or left side and the function will be run again
+    * If a match is detected, the index of the match will be returned and -1 if the binary search list length becomes 0 without finding a match
+    * 
+    * @param file_numbers
+    * @param input_num
+    * @return index of where the value was found in the list, otherwise -1
+    */
+
     public static int binary_search(int[] file_numbers, int input_num){
         // find inital indexes
         int left = 0;
@@ -50,7 +78,17 @@ public class FullSearchAlgs {
     }
 
 
-    // random search function *add catch all if the function terminates after 10M searches returning the value -2*
+    /**
+    * The random search function for FullSearchAlgs class
+    * Takes two inputs and searches through the file_numbers for a desired number by searching all file_number items randomly
+    * The function will take a random index within the list and check to see if the item at that index matches the input_num
+    * If the function finds a match while running- the index of the match will be returned, if no match is found after the function runs 10M times- -2 will be returned
+    * 
+    * @param file_numbers
+    * @param input_num
+    * @return index of where the value was found in the list, otherwise -2 if loop has run 10M times without finding a match
+    */
+
     public static int random_search(int[] file_numbers, int input_num){
         // initalize while loop long varibale cunter for logic
         long counter = 0;

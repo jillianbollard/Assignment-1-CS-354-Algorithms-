@@ -1,7 +1,19 @@
-// written by Jillian Bollard for assignment #1
+/**
+ * The SearchAlgs class for Assignment #1
+ * @author Jillian Bollard
+ * 11/16/2026
+ */
 
 public class SearchAlgs{
-    // main function for inputs and searches (will utilize helper class with full search methods)
+    
+    /**
+    * The main function for SearchAlgs class (CS 354 Assignment #1)
+    * Takes two inputs of a desired number to find within a given list of integers as well as the type of function wanting to be used as the search method
+    * The function will read in all the integers into the file_numbers object and then discern the type of search method through if statements then run the corresponding method from the FullSearchAlgs class
+    * 
+    * @param args - String[]
+    * @return nothing (void method)
+    */
     public static void main(String[] args){
         // grab and store args values but case to ints for later comparison
         int num = Integer.parseInt(args[0]); 
