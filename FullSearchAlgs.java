@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class FullSearchAlgs {
     // linear search function
     public static int linear_search(int[] file_numbers, int input_num){
@@ -76,9 +74,6 @@ public class FullSearchAlgs {
         // initalize while loop long varibale cunter for logic
         long counter = 0;
 
-        // create a list to check if all positions have been randomly checked and return -1 if all positions have been covered without finding desired value
-        ArrayList<Integer> checked_pos = new ArrayList<Integer>();
-
         // implement random search method
         while(counter < 10000000){
             // choose random index
@@ -89,23 +84,9 @@ public class FullSearchAlgs {
                 return rand_index;
             }
 
-            // check to see if that position had been checked and if 
-            if(!checked_pos.contains(rand_index)){
-                // add that index to the list of checked indexes
-                checked_pos.add(rand_index);
-
-                // now check and see if all possible indexes have been checked before hitting 10M runs but not found value
-                if(checked_pos.size() == file_numbers.length){
-                    return -1;
-                }
-            }
-
             // increment counter and repeat
             counter++;
         }
-
-        // make catch call where the function terminates and sets the return_val to -2
-       
 
         // catch call if loop terminates after 10M runs it returns -2
         return -2;
