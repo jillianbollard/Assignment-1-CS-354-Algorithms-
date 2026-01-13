@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class FullSearchAlgs {
     // linear search function
     public static int linear_search(int[] file_numbers, int input_num){
@@ -57,7 +59,7 @@ public class FullSearchAlgs {
                 // smaller than middle value
                 right = middle_index;
             }
-            
+
             else{
                 // larger than middle value
                 left = middle_index;
@@ -71,16 +73,41 @@ public class FullSearchAlgs {
 
     // random search function *add catch all if the function terminates after 10M searches returning the value -2*
     public static int random_search(int[] file_numbers, int input_num){
-        // initalize the default return val to not found
-        int return_val = -1;
+        // initalize while loop long varibale cunter for logic
+        long counter = 0;
+
+        // create a list to check if all positions have been randomly checked and return -1 if all positions have been covered without finding desired value
+        ArrayList<Integer> checked_pos = new ArrayList<Integer>();
 
         // implement random search method
+        while(counter < 10000000){
+            // choose random index
+            int rand_index = (int)Math.random() * (file_numbers.length - 1);
 
+            // if it matches position return that index
+            if(file_numbers[rand_index] == input_num){
+                return rand_index;
+            }
+
+            // check to see if that position had been checked and if 
+            if(!checked_pos.contains(rand_index)){
+                // add that index to the list of checked indexes
+                checked_pos.add(rand_index);
+
+                // now check and see if all possible indexes have been checked before hitting 10M runs but not found value
+                if(checked_pos.size() == file_numbers.length){
+                    return -1;
+                }
+            }
+
+            // increment counter and repeat
+            counter++;
+        }
 
         // make catch call where the function terminates and sets the return_val to -2
-        return_val = -2;
+       
 
-        // return the final value if found with random search, terminated, or not found
-        return return_val;
+        // catch call if loop terminates after 10M runs it returns -2
+        return -2;
     }
 }
