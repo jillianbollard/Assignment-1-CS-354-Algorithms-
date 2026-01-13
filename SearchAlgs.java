@@ -11,7 +11,7 @@ public class SearchAlgs{
     * Takes two inputs of a desired number to find within a given list of integers as well as the type of function wanting to be used as the search method
     * The function will read in all the integers into the file_numbers object and then discern the type of search method through if statements then run the corresponding method from the FullSearchAlgs class
     * 
-    * @param args - String[]
+    * @param args - the String[] list where all parameters are listed within and retrieve to store in variables with bracket notation
     * @return nothing (void method)
     */
     public static void main(String[] args){
