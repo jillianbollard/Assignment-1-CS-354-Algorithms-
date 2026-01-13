@@ -72,6 +72,7 @@ detail each separate instance of assistance.
     - **URL of Source: https://www.w3schools.com/java/java_arraylist.asp**
     - **How it was Used:** Used in the random search function to add the previously checked index values to a list so that if all indexes had been checked without finding the value -1 would be returned instead of waiting to hit 10M iterations and then return -2
     - **Specific Part of Assignment Affected:** Random search -1 return instance set up and ability to terminate function early to save time and money from running 10M times if list is only 10 items long and item does not exist within list
+
 ---
 
 ## Confirmation
