@@ -19,24 +19,6 @@ public class FullSearchAlgs {
 
     // binary search function
     public static int binary_search(int[] file_numbers, int input_num){
-        // sort the file_numbers list with nested for loop
-        for (int i = 0; i < file_numbers.length - 1; i++){
-
-            // nest second for loop
-            for (int j = i + 1; j < file_numbers.length; j++){
-
-                // check to see if out of order, if so switch values 
-                if(file_numbers[i] > file_numbers[j]){
-
-                    // swap numbers position
-                    int temp = file_numbers[i];
-                    file_numbers[i] = file_numbers[j];
-                    file_numbers[j] = temp;
-
-                } // end if
-            } // end nested
-        } // end outer loop
-
         // find inital indexes
         int left = 0;
         int right = file_numbers.length - 1;
@@ -55,12 +37,11 @@ public class FullSearchAlgs {
             // if no match, file down list to look within
             if(file_numbers[middle_index] > input_num){
                 // smaller than middle value
-                right = middle_index;
+                right = middle_index - 1;
             }
-
             else{
                 // larger than middle value
-                left = middle_index;
+                left = middle_index + 1;
             }
         }
 
